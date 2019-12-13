@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Custom\css\**" />
+    <Compile Remove="wwwroot\Custom\fonts\**" />
+    <Compile Remove="wwwroot\Custom\js\**" />
+    <Content Remove="wwwroot\Custom\css\**" />
+    <Content Remove="wwwroot\Custom\fonts\**" />
+    <Content Remove="wwwroot\Custom\js\**" />
+    <EmbeddedResource Remove="wwwroot\Custom\css\**" />
+    <EmbeddedResource Remove="wwwroot\Custom\fonts\**" />
+    <EmbeddedResource Remove="wwwroot\Custom\js\**" />
+    <None Remove="wwwroot\Custom\css\**" />
+    <None Remove="wwwroot\Custom\fonts\**" />
+    <None Remove="wwwroot\Custom\js\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Custom\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.7.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

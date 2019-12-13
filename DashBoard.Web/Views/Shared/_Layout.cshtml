@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DashBoard - Transaction Monitoring</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/datatables/media/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/jquery-steps/demo/css/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/font-linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/font-icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/cleanhtmlvideoplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="Custom/vendors/cleanhtmlvideoplayer/src/player.css">
+    <script src="Custom/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="Custom/vendors/popper.js/dist/umd/popper.js"></script>
+    <script src="Custom/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="Custom/vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="Custom/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="Custom/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="Custom/vendors/spin.js/spin.js"></script>
+    <script src="Custom/vendors/ladda/dist/ladda.min.js"></script>
+    <script src="Custom/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="Custom/vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="Custom/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="Custom/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="Custom/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="Custom/vendors/autosize/dist/autosize.min.js"></script>
+    <script src="Custom/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="Custom/vendors/moment/min/moment.min.js"></script>
+    <script src="Custom/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="Custom/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="Custom/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Custom/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="Custom/vendors/summernote/dist/summernote.min.js"></script>
+    <script src="Custom/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="Custom/vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="Custom/vendors/nestable/jquery.nestable.js"></script>
+    <script src="Custom/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="Custom/vendors/datatables/media/js/dataTables.bootstrap4.js"></script>
+    <script src="Custom/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="Custom/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="Custom/vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="Custom/vendors/d3/d3.min.js"></script>
+    <script src="Custom/vendors/c3/c3.min.js"></script>
+    <script src="Custom/vendors/chartist/dist/chartist.min.js"></script>
+    <script src="Custom/vendors/peity/jquery.peity.min.js"></script>
+    <script src="Custom/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="Custom/vendors/jquery-countTo/jquery.countTo.js"></script>
+    <script src="Custom/vendors/nprogress/nprogress.js"></script>
+    <script src="Custom/vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="Custom/vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="Custom/vendors/dropify/dist/js/dropify.min.js"></script>
+    <script src="Custom/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="Custom/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+    <script src="Custom/vendors/d3-dsv/dist/d3-dsv.js"></script>
+    <script src="Custom/vendors/d3-time-format/dist/d3-time-format.js"></script>
+    <script src="Custom/vendors/techan/dist/techan.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Custom/components/core/common/core.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/core/widgets/widgets.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/vendors/common/vendors.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/settings/common/settings.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/settings/themes/themes.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/menu-left/common/menu-left.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/menu-right/common/menu-right.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/top-bar/common/top-bar.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/footer/common/footer.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/pages/common/pages.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/ecommerce/common/ecommerce.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="Custom/components/apps/common/apps.cleanui.css">
+    <script src="Custom/components/menu-left/common/menu-left.cleanui.js"></script>
+    <script src="Custom/components/menu-right/common/menu-right.cleanui.js"></script>
+
+    <script type="text/javascript" src="~/js/signalr/dist/browser/signalr.min.js"></script>
+    <script type="text/javascript" src="~/js/monitor.js" asp-append-version="true"></script>
+</head>
+<body class="config--vertical config--borderLess menu-left--colorful menu-left--visible theme--light menu-left--shadow">
+    <div class="menu-right">
+        <div class="menu-right__inner">
+            <div class="menu-right__header">
+                <span class="fa fa-times pull-right menu-right__action--menu-toggle"><!-- --></span>
+                Theme Settings
+            </div>
+            <div class="menu-right__content">
+                <div class="menu-right__descr">
+                    This module "block-menu-right" gives possibility to construct custom blocks with any widgets, components and elements inside, like this theme settings
+                </div>
+                <div class="menu-right__label">
+                    Theme Style
+                </div>
+                <div class="menu-right__setting menu-right--example-option">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-theme" value=""> Dark
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-theme" value="theme--light"> Light
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-theme" value="theme--green"> Green
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-theme" value="theme--blue"> Blue
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-theme" value="theme--red"> Red
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-theme" value="theme--orange"> Orange
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right__label">
+                    Boxed Layout
+                </div>
+                <div class="menu-right__setting menu-right--example-option">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-boxed" value="config--boxed"> On
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-boxed" value=""> Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right__label">
+                    Fixed Top Bar
+                </div>
+                <div class="menu-right__setting menu-right--example-option">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-topbar" value=""> On
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-topbar" value="config--unfixed"> Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right__label">
+                    Borderless Cards
+                </div>
+                <div class="menu-right__setting menu-right--example-option">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-borderLess" value="config--borderLess"> On
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-borderLess" value=""> Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right__label">
+                    Colorful Menu
+                </div>
+                <div class="menu-right__setting menu-right--example-option">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-colorful" value="menu-left--colorful"> On
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-colorful" value=""> Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right__label">
+                    Menu Shadow
+                </div>
+                <div class="menu-right__setting menu-right--example-option">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-shadow" value="menu-left--shadow"> On
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-shadow" value=""> Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right__label">
+                    Squared Corners
+                </div>
+                <div class="menu-right__setting menu-right--example-option">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-corners" value="config--squared-corners"> On
+                            </label>
+                        </div>
+                        <div class="btn-group">
+                            <label class="btn btn-default">
+                                <input type="radio" name="options-corners" value=""> Off
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="menu-left">
+        <div class="menu-left__lock menu-left__action--menu-toggle">
+            <div class="menu-left__pin-button">
+                <div><!-- --></div>
+            </div>
+        </div>
+        <div class="menu-left__logo">
+            <a href="">
+                <img src="Custom/components/dummy-assets/common/img/logo-inverse2.png" alt="" />
+            </a>
+        </div>
+        <div class="menu-left__inner">
+            <ul class="menu-left__list menu-left__list--root">
+                <li class="menu-left__item">
+                    <a href="">
+                        <span class="menu-left__icon icmn-home"></span>
+                        <span class="badge badge-primary pull-right">New</span>
+                        Dashboard Home
+                    </a>
+                </li>
+                <li class="menu-left__divider"><!-- --></li>
+                <li class="menu-left__item">
+                    <a href="">
+                        <span class="menu-left__icon fa fa-check-circle-o"></span>
+                        <span class="badge badge-success pull-right" id="ValidAccess2">0</span>
+                        Valid Access
+                    </a>
+                </li>
+                <li class="menu-left__item">
+                    <a href="">
+                        <span class="menu-left__icon fa fa-exclamation-triangle"></span>
+                        <span class="badge badge-danger pull-right" id="NotValidAccess2">0</span>
+                        No Access
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="utils__content" style="margin-top: -65px">
+        <!-- START: dashboard -->
+        <nav class="utils__top-sidebar utils__top-sidebar--bg">
+            <div class="pull-right">
+                <a href="javascript: void(0);" class="btn btn-sm btn-outline-default ladda-button">
+                    Update
+                    <span class="hidden-sm-down"> Dashboard</span>
+                </a>
+            </div>
+            <span class="font-size-18 d-block mb-2">
+                <span class="text-muted">Home ·</span>
+                <strong>Dashboard</strong>
+                <small class="text-muted">Real time monitor for Access and Payment transactions</small>
+            </span>
+        </nav>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="utils__title utils__title--flat mb-3">
+                    <span class="text-uppercase font-size-16">Today(s) Statistics</span>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="card chartCard">
+                            <div class="chartCard__chart">
+                                <div class="chart-area-1 chartist"></div>
+                            </div>
+                            <div class="chartCard__amount" id="ValidAccess" style="color: #46be8a; font-size: 32px">0</div>
+                            <div class="chartCard__title">Valid Access</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="card chartCard">
+                            <div class="chartCard__chart">
+                                <div class="chart-area-2 chartist"></div>
+                            </div>
+                            <div class="chartCard__amount" id="NotValidAccess" style="color: #fb434a; font-size: 32px">0</div>
+                            <div class="chartCard__title">No Access</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <main role="main" style="width: 100% !important">
+                @RenderBody()
+            </main>
+
+        </div>
+        <!-- END: dashboard -->
+        <!-- START: page scripts -->
+        <script>
+            (function ($) {
+                "use strict";
+                $(function () {
+
+                    ///////////////////////////////////////////////////////////
+                    // tooltips
+                    $('[data-toggle=tooltip]').tooltip()
+
+                    ///////////////////////////////////////////////////////////
+                    // ladda buttons
+                    Ladda.bind('.ladda-button', { timeout: 2000 })
+
+                    ///////////////////////////////////////////////////////////
+                    // Chartistcard
+
+                    new Chartist.Line(".chart-area-1", {
+                        series: [
+                            [2, 11, 8, 14, 18, 20, 26]
+                        ]
+                    }, {
+                        width: "120px",
+                        height: "107px",
+
+                        showPoint: false,
+                        showLine: true,
+                        showArea: true,
+                        fullWidth: true,
+                        showLabel: false,
+                        axisX: {
+                            showGrid: false,
+                            showLabel: false,
+                            offset: 0
+                        },
+                        axisY: {
+                            showGrid: false,
+                            showLabel: false,
+                            offset: 0
+                        },
+                        chartPadding: 0,
+                        low: 0,
+                        plugins: [
+                            Chartist.plugins.tooltip()
+                        ]
+                    });
+
+                    new Chartist.Line(".chart-area-2", {
+                        series: [
+                            [20, 80, 67, 120, 132, 66, 97]
+                        ]
+                    }, {
+                        width: "120px",
+                        height: "107px",
+
+                        showPoint: false,
+                        showLine: true,
+                        showArea: true,
+                        fullWidth: true,
+                        showLabel: false,
+                        axisX: {
+                            showGrid: false,
+                            showLabel: false,
+                            offset: 0
+                        },
+                        axisY: {
+                            showGrid: false,
+                            showLabel: false,
+                            offset: 0
+                        },
+                        chartPadding: 0,
+                        low: 0,
+                    });
+
+                    new Chartist.Line(".chart-area-3", {
+                        series: [
+                            [42, 40, 80, 67, 84, 20, 97]
+                        ]
+                    }, {
+                        width: "120px",
+                        height: "107px",
+
+                        showPoint: false,
+                        showLine: true,
+                        showArea: true,
+                        fullWidth: true,
+                        showLabel: false,
+                        axisX: {
+                            showGrid: false,
+                            showLabel: false,
+                            offset: 0
+                        },
+                        axisY: {
+                            showGrid: false,
+                            showLabel: false,
+                            offset: 0
+                        },
+                        chartPadding: 0,
+                        low: 0,
+                    });
+
+                })
+            })(jQuery)
+        </script>
+        <!-- END: page scripts -->
+        <div class="footer" style="padding-top: 2px;">
+
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="footer__company">
+                            <img class="footer__company-logo" src="Custom/components/dummy-assets/common/img/AP_Logo2.png"
+                                 title="My Company">
+                            <span>
+                                © 2019 <a href="#" target="_blank">Sample Company</a>
+                                <br>
+                                All rights reserved
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript: void(0);" class="utils__scroll-top" onclick="$('body, html').animate({'scrollTop': 0}, 500)">
+                <i class="icmn-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+@RenderSection("Scripts", required: false)
